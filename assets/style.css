@@ -1,0 +1,79 @@
+body{
+	background-color:black;
+	font-family:Georgia, Times, "Times New Roman", serif;
+}
+
+#trainSch{
+	border: 20px solid lightgreen;
+	background-color:white;
+	width:100%;
+	height:500px;
+	margin: 20px auto;
+}
+
+#currentDate{
+	border:transparent;
+	margin-top:50px;
+	font-size:30px;
+	color:#39FF14;
+	margin:auto;
+	text-align:center;
+	letter-spacing:2px;
+}
+
+#displayDestination{
+	border: 1px solid darkgray;
+	width:100%;
+	height:50px;
+	margin-bottom:20px;
+}
+
+
+h1{
+	text-align:center;
+	color:white;
+	letter-spacing: 3px;
+	font-size:50px;
+}
+
+h2{
+	text-align:center;
+	color:white;
+	margin:auto;
+}
+
+#reset{
+	margin-left:5px;
+}
+
+#submit, #reset{
+	border:transparent;
+	background-color:lightgray;
+	color:black;
+	font-weight:bold;
+	margin-top:-30px;
+}
+
+table{
+	width:100%
+}
+
+.th{
+	color:black;
+	font-size:20px;
+	text-decoration:underline;
+}
+
+#userInput{
+	border: 20px solid lightgreen;
+	background-color:white;
+	width:100%;
+	height:350px;
+	margin:auto auto 20px auto;
+	padding-top:10px;
+}
+
+.wrapper{
+	margin:auto;
+}
+

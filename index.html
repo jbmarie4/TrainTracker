@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Train Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="./assets/style.css">
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+	<header></header>
+	<h1>Train Tracker</h1>
+	<div class="container">
+<!-- section for user to input train data -->
+		<div class="row">
+			<div class="col-sm-8" id="userInput">
+			<p></p>
+		
+		<!-- input train name -->		
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Train Name:</span>
+				</div>
+				<input type="text" class="form-control" id="tName" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				</div><!-- end of departure time div-->
+				
+				
+		<!-- input destination -->		
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Destination:</span>
+				</div>
+				<input type="text" class="form-control" id="tDestination" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				</div><!-- end of destination div-->
+				
+				<!-- input departure time -->		
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">First Train Time, (HH:mm - military time):</span>
+				</div>
+				<input type="text" class="form-control" id="tDeparture" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				</div><!-- end of departure time div-->
+
+				<!-- input frequency -->		
+				<div class="input-group mb-3">
+				<div class="input-group-prepend">
+				<span class="input-group-text" id="inputGroup-sizing-default">Frequency:</span>
+				</div>
+				<input type="text" class="form-control" id="tFrequency" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+				</div>
+				<small id="emailHelp" class="form-text text-muted">Please check with train company for up-to-date train frequency and departure time.</small><br>
+			<!-- end of frequency div -->
+				
+				
+			<div class="buttons">
+			<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+			<button type="submit" class="btn btn-primary" id="reset">Reset</button>
+			</div>
+			</div> <!-- end of user input div -->
+		</div> <!-- end of first row with drop down menus -->
+		
+		
+<!-- next row has two columns, each to display train or train schedule -->		
+		<div class="row">
+		
+				
+				<div id="currentDate">...</div>
+				
+				<
+			<div class="col-sm-10" id="trainSch">
+				<table id="trainDisplay">
+					<thead>
+						<tr>
+							<th class="th">Train<br> Name</th>
+							<th class="th">Destination</th>
+							<th class="th">Frequency</th>
+							<th class="th">Minutes<br> Away</th>
+							<th class="th">Arrival<br> Time</th>
+						</tr>
+					</thead>
+					<tbody>
+					
+					</tbody>
+				</table>			
+			</div> <!-- end of train info div -->
+		</div> <!--end of wrapper -->
+			<!-- <div class="col-sm-6" id="map">
+				<h2>Route Map</h2>
+				<p>display map; user can click for pdf</p>
+			</div> -->
+		</div>
+	</div> <!-- end of container div -->
+	
+	<!-- <button>train schedules (or this can be in the header menu)</button> -->
+	
+	<footer></footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDOd4Zp5JEAJlnfoV940Wo87RNfFUcZOuc",
+    authDomain: "traintracker-49d67.firebaseapp.com",
+    databaseURL: "https://traintracker-49d67.firebaseio.com",
+    projectId: "traintracker-49d67",
+    storageBucket: "traintracker-49d67.appspot.com",
+    messagingSenderId: "505159632632"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="./javascript/javascript.js"></script>
+</body>
+</html>
